@@ -20,8 +20,8 @@ spec:
   types:
     Head:
       resources:
-        cpus: 6
-        ramRatio: 6
+        cpus: 4
+        ramRatio: 2
         accelerators: # optional
           gpu:
             count: 1
@@ -30,8 +30,8 @@ spec:
 
     Workers:
       - name: cpu-workers
-        count: 5
+        count: 2
         resources:
-          cpus: 6
-          ramRatio: 2
+          cpus: 4
+          ramRatio: 1
           shmSizeGB: 0
